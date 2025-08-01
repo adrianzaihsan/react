@@ -1,0 +1,20 @@
+{
+  "name": "growing-project",
+  "version": "1.0.0",
+  "description": "Capstone Project for Dicoding Bootcamp",
+  "scripts": {
+    "client:install": "cd client && npm install",
+    "server:install": "cd server && npm install",
+    "install-all": "npm install && npm run client:install && npm run server:install",
+    "client:dev": "cd client && npm run dev",
+    "server:dev": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "client:build": "cd client && npm run build",
+    "server:start": "cd server && npm start",
+    "setup-db": "cd server && npm run setup-db",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
