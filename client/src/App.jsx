@@ -18,7 +18,7 @@ import ArchivePage from "./pages/ArchivePage";
 import NotFound from "./pages/NotFound";
 
 // Setup axios defaults
-axios.defaults.baseURL = "http://localhost:5001";
+axios.defaults.baseURL = "https://express-production-c649.up.railway.app";
 axios.defaults.headers.common["Content-Type"] = "application/json";
 
 // Protected route component
